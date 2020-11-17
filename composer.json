@@ -1,14 +1,14 @@
 {
-  "name": "lokielse/aliyun-open-api-sls",
+  "name": "monyxie/aliyun-open-api-sls",
   "description": "The SLS SDK for Aliyun OpenAPI",
-  "keywosls": [
+  "keywords": [
     "aliyun",
     "sls",
     "php",
     "sdk",
     "logs"
   ],
-  "homepage": "https://github.com/lokielse/aliyun-open-api-sls",
+  "homepage": "https://github.com/monyxie/aliyun-open-api-sls",
   "license": "MIT",
   "authors": [
     {
