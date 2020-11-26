@@ -121,17 +121,19 @@ class Client
     /**
      * Client constructor
      *
-     * @param string $endpoint    LOG host name, for example, http://cn-hangzhou.sls.aliyuncs.com
+     * @param string $endpoint LOG host name, for example, http://cn-hangzhou.sls.aliyuncs.com
      * @param string $accessKeyId aliyun accessKeyId
-     * @param string $accessKey   aliyun accessKey
+     * @param string $accessKey aliyun accessKey
+     * @param string $token
+     * @param string|null $source
      */
-    public function __construct($endpoint, $accessKeyId, $accessKey, $token = "")
+    public function __construct($endpoint, $accessKeyId, $accessKey, $token = "", $source = null)
     {
         $this->setEndpoint($endpoint); // set $this->logHost
         $this->accessKeyId = $accessKeyId;
         $this->accessKey   = $accessKey;
         $this->stsToken    = $token;
-        $this->source      = Util::getLocalIp();
+        $this->source      = $source ?? Util::getLocalIp();
     }
 
 
